@@ -1,0 +1,139 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    width: 100%;
+    position: relative;
+    overflow: default;
+    }
+
+
+    .videoP{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+      z-index: -1; /* Envía el video al fondo */
+    }
+
+    /* TITULAR */
+    .inicio h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .inicio h1 .highlight {
+      color: #FFA500; /* naranja */
+    }
+
+    /* PÁRRAFO */
+    .inicio p {
+      max-width: 600px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+      color: #eef;
+    }
+
+    /* GALERÍA DE ICONOS */
+    .inicio, .DiegoInicio , .FranInicio , .MigueInicio{
+      position: relative; /* Asegura que el contenido esté encima del video */
+      z-index: 1; /* Coloca el contenido por encima del video */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      color: #fff;
+      padding: 20px;
+      gap: 40px; /* Espaciado entre elementos */
+    }
+    .DiegoInicio h1 , .FranInicio h1 , .MigueInicio h1{
+    left: 100px;
+    width: 350px;
+    position: absolute;
+    top: 150px;
+    font-size: 2.5rem;
+    color: #018DB0;
+    }
+    .DiegoInicio p , .FranInicio p , .MigueInicio p{
+      left: 100px;
+      width: 350px;
+      position: absolute;
+      top: 250px;
+      color: #D1884F;
+    }
+    .DiegoInicio .btn, .FranInicio .btn, .MigueInicio .btn{
+      background-color: #008080; /* teal oscuro */
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      transition: background-color 5s;
+      left:200px;
+      position: absolute;
+      top: 350px;
+
+    }
+
+    /* IMÁGENES REDONDAS */
+    .inicio img, .DiegoInicio img, .FranInicio img , .MigueInicio img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%; /* Hace las imágenes redondas */
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      background-color: #fff;
+      margin: 19px;
+    }
+    .DiegoInicio img,.FranInicio img, .MigueInicio img{
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      right: 100px;
+      top: 150px;
+      }
+    .Diego img{
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 50%; /* Hace las imágenes redondas */
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      background-color: #fff;
+      margin: 19px;
+    top: 50px;
+    position: absolute;
+    }
+      .Diego h1{
+        left: 570px;
+        position: absolute;
+        top: 100px; /* Reduce el valor de 'top' para subir el h1 */
+        font-size: 2.5rem;
+        color: #018DB0;
+        font-size: 3.0rem;
+      } 
+    .Diego h4{
+       position: sticky;
+        position: absolute;
+        top: 100px; /* Reduce el valor de 'top' para subir el h1 */
+      } 
+       /* BOTÓN */
+    .inicio .btn {
+      background-color: #008080; /* teal oscuro */
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      transition: background-color 5s;
+    }
+    .inicio .btn:hover {
+      background-color: #006666;
+    }
