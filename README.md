@@ -23,6 +23,6 @@ Este proyecto es una landing page moderna y dinámica, creada para mostrar un pe
 - **Contacto:** Encuentra cómo comunicarte.
 
 ---
-💡 Créditos y agradecimientos
-Font Awesome para los íconos.
-Inspiración en portfolios modernos y recursos de diseño web.
+## 💡 Créditos y agradecimientos
+- Font Awesome para los íconos.
+- Inspiración en portfolios modernos y recursos de diseño web.
