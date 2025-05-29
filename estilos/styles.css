@@ -3,7 +3,9 @@
       margin: 0;
       padding: 0;
     }
-
+html {
+      scroll-behavior: smooth; /* Desplazamiento suave */
+    }
     body, html {
        margin: 0;
   padding: 0;
