@@ -2,10 +2,9 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      
     }
-html {
-      scroll-behavior: smooth; /* Desplazamiento suave */
-    }
+
     body, html {
        margin: 0;
   padding: 0;
@@ -34,6 +33,7 @@ html {
       z-index: -1; /* Envía el video al fondo */
       background-size: cover;
             background-attachment: fixed;
+            
     }
 
     /* TITULAR */
@@ -54,7 +54,7 @@ html {
     }
 
     /* GALERÍA DE ICONOS */
-    .inicio, .Conocimientos, .Contacto{
+    .inicio, .Conocimientos, .Contacto, .Proyectos{
         position: relative; /* Asegura que el contenido esté encima del video */
       overflow: hidden;
         min-height: 100vh;
@@ -191,55 +191,199 @@ html {
     .inicio .btn:hover {
       background-color: #006666;
     }
-/* Botones de navegación rápida */
-  .nav-bar {
-  display: flex;
-  justify-content: space-between; /* Volver a la izq, otros a la der */
-  align-items: center;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  width: auto;
-  z-index: 10;
-  gap: 16px;
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity:100%;
+      background: rgb(241, 240, 234, 0.3);
+
+  z-index: 1000;
 }
 
-.quick-nav, .volver {
+nav ul {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  list-style: none;
+  background: none;
 }
- .nav-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #4DA0B0 0%, #1a2a6c 100%);
-  color: #fff;
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+
+
+
+.Conocimientos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px; /* Reducido para mejor centrado */
+  margin: 0 auto;
+}
+
+/* Mantenemos el tamaño original de las cards */
+.skill-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  perspective: 1000px;
+}
+
+/* Ajusta el tamaño de las imágenes dentro de las tarjetas */
+.skill-card img {
+  width: 60%; /* Reduce el tamaño de la imagen */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.skill-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.skill-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.skill-card-front, .skill-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-card-front {
+    background: rgb(241, 240, 234, 0.13);
+    color: #fff;
+}
+
+.skill-card-back {
+      background: rgb(241, 240, 234, 0.13);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-descripcion {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  padding: 10px;
+}
+
+
+.form__container {
+  
+  background: rgba(241, 240, 234, 0.13); /* Mismo fondo que las skill cards */
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.form__container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(77, 160, 176, 0.25);
-  border: none;
-  font-weight: bold;
+  gap: 1.5rem;
 }
 
-     .nav-btn:hover {
-  background: linear-gradient(135deg, #FFA500 0%, #4DA0B0 100%);
+.form__container h2 {
   color: #fff;
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 8px 24px rgba(255, 165, 0, 0.25);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.nav-btn i {
+.form__input {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: 1px solid rgba(255, 255, 255, 0.2)
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Añade un sutil sombreado */
+
+}
+
+.form__input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+.form__input--message {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form__cta {
+  background: #007bff;
+  color: white;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 10px;
   font-size: 1.1rem;
-  margin-bottom: 2px;
-}
-
-  .nav-btn span {
-  font-size: 0.49rem;
-  font-weight: 600;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.form__cta:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+

@@ -9,30 +9,24 @@
           <link rel="icon" type="./imagenes/iconoweb.png" href="imagenes/iconoweb.png">
   </head>
 <body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="#Diego" class="nav-link active">Perfil</a></li>
+        <li><a href="#Conocimientos" class="nav-link">Conocimientos</a></li>
+        <li><a href="#Proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#Contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <section class="Diego" id="Diego">
      <div class="nav-bar">
-  <div class="volver">
-    <a href="index.html" class="nav-btn">
-      <i class="fas fa-arrow-left"></i>
-      <span>Volver</span>
-    </a>
-  </div>
-  <div class="quick-nav">
-    <a href="#Diego" class="nav-btn">
-      <i class="fas fa-user"></i>
-      <span>Yo</span>
-    </a>
-    <a href="#Conocimientos" class="nav-btn">
-      <i class="fas fa-code"></i>
-      <span>Skills</span>
-    </a>
-    <a href="#Contacto" class="nav-btn">
-      <i class="fas fa-envelope"></i>
-      <span>Contacto</span>
-    </a>
-  </div>
+
 </div>
-        <video src="gif/VideoDiegoP.mp4" autoplay muted loop class="videoP"></video>
+    <video src="gif/VideoDiegoP.mp4" autoplay muted loop class="videoP parallax-bg"></video>
+
          <h1> ¿Quien soy?</h1>
         <div class="iconD">
             <img src="./imagenes/diego.png" alt="Usuario con casco VR">
@@ -44,12 +38,94 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       </section>
 
   <section class="Conocimientos" id="Conocimientos">
-    <video src="gif/VideoFranP.mp4" autoplay muted loop class="videoP"></video>
-      
+    <video src="gif/VideoFranP.mp4" autoplay muted loop class="videoP parallax-bg"></video>
+     
+     <div class="skills">
+    <div class="skill-card">
+        <div class="skill-card-inner">
+            <div class="skill-card-front">
+                <img src="./imagenes/logohtml.png" style="width: 80%;" alt="html">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card-back">
+                <p class="card-descripcion">HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Se utiliza para estructurar el contenido en la web, definiendo elementos como encabezados, párrafos, enlaces, imágenes y otros componentes.</p>
+            </div>
+        </div>
+    </div>
+                
+                 <div class="skill-card">
+        <div class="skill-card-inner">
+            <div class="skill-card-front">
+                  <img src="./imagenes/pngwing.com (1).png" style="width: 65%;"  alt="css">
+                <h3>CSS</h3>
+           </div>
+           <div class="skill-card-back">
+                <p class="card-descripcion">HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Se utiliza para estructurar el contenido en la web, definiendo elementos como encabezados, párrafos, enlaces, imágenes y otros componentes.</p>
+            </div>
+        </div>
+    </div>
+
+             <div class="skill-card">
+        <div class="skill-card-inner">
+            <div class="skill-card-front">
+                  <img src="./imagenes/JavaScript.png" style="width: 75%;"  alt="JS">
+                <h3>JavaScript</h3>
+           </div>
+           <div class="skill-card-back">
+                <p class="card-descripcion">HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Se utiliza para estructurar el contenido en la web, definiendo elementos como encabezados, párrafos, enlaces, imágenes y otros componentes.</p>
+            </div>
+        </div>
+    </div>
+                     <div class="skill-card">
+        <div class="skill-card-inner">
+            <div class="skill-card-front">
+                  <img src="./imagenes/pngwing.com.png" style="width: 75%;"  alt="NodeJS">
+                <h3>NodeJS</h3>
+           </div>
+           <div class="skill-card-back">
+                <p class="card-descripcion">HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Se utiliza para estructurar el contenido en la web, definiendo elementos como encabezados, párrafos, enlaces, imágenes y otros componentes.</p>
+            </div>
+        </div>
+    </div>
+                         <div class="skill-card">
+        <div class="skill-card-inner">
+            <div class="skill-card-front">
+                  <img src="./imagenes/db.png" style="width: 75%;"  alt="NodeJS">
+                <h3 style="margin-top: 20px;">SQL</h3>
+           </div>
+           <div class="skill-card-back">
+                <p class="card-descripcion">HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Se utiliza para estructurar el contenido en la web, definiendo elementos como encabezados, párrafos, enlaces, imágenes y otros componentes.</p>
+            </div>
+        </div>
+    </div>
   </section>
-  <section class="Contacto" id="Contacto">
-    <video src="gif/VideoMigueP.mp4" autoplay muted loop class="videoP"></video>
+  
+ <section class="Proyectos" id="Proyectos">
+    <video src="gif/VideoFranP.mp4" autoplay muted loop class="videoP parallax-bg"></video>
+     
+
   </section>
 
+
+
+<section class="Contacto" id="Contacto">
+  <video src="gif/VideoDiegoP.mp4" autoplay muted loop class="videoP parallax-bg"></video>
+  <div class="form__container">
+    <h2>Contáctame</h2>
+    <form>
+      <input type="text" class="form__input" placeholder="Nombre" required>
+      <input type="email" class="form__input" placeholder="Email" required>
+      <textarea class="form__input form__input--message" placeholder="Mensaje" required></textarea>
+      <button type="submit" class="form__cta">Enviar</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/active-scroll@latest/dist/active-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify"></script>
+  <script src="./scripts/deslizamiento.js"></script>
 </body>
 </html>
+
