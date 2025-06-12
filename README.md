@@ -7,9 +7,9 @@ Este proyecto es una landing page moderna y dinámica, creada para mostrar un pe
 ## ¡Explora la página y descubre todas las interacciones! 👀
 [Visita la Demo aquí](https://arr-fran.github.io/PP_TrabajoN1/index.html#1)
 
-![Image](<img width="946" alt="Image" src="https://github.com/user-attachments/assets/50c0ab8a-8a8b-449c-ab43-c8820c28b842" />)
+![Image](<img width="946" alt="Image" src="https://github.com/user-attachments/assets/50c0ab8a-8a8b-449c-ab43-c8820c28b842"/>)
 
-![Image](<img width="955" alt="Image" src="https://github.com/user-attachments/assets/e725e5e7-f7cf-41df-8c91-4e638e43e963" />)
+![Image](<img width="955" alt="Image" src="https://github.com/user-attachments/assets/e725e5e7-f7cf-41df-8c91-4e638e43e963"/>)
 ---
 ---
 
