@@ -331,7 +331,7 @@ nav ul li a:hover {
 
 .form__container {
   
-  background: rgba(241, 240, 234, 0.13); /* Mismo fondo que las skill cards */
+  background-color: rgba(30, 30, 30, 0.7); /* Mismo fondo que las skill cards */
   backdrop-filter: blur(10px);
   padding: 3rem;
   border-radius: 15px;
@@ -468,9 +468,4 @@ nav ul li a:hover {
 .slider-img:hover p {
   opacity: 1;
 
-}
-
-.contacto{
-  backgroud: rgb(27, 27, 27);
-  
 }
