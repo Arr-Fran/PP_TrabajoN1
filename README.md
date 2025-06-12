@@ -1,7 +1,7 @@
 # 🚀 Portfolio Web Interactivo
 
 ¡Bienvenido/a a nuestro Portfolio Web Colaborativo!  
-Este proyecto es una landing page moderna y dinámica, creada para mostrar un perfil profesional, conocimientos y formas de contacto, usando **videos de fondo**, animaciones y un diseño responsive.
+Este proyecto es una landing page moderna y dinámica, creada para mostrar un perfil profesional, conocimientos y formas de contacto, usando **videos de fondo** y animaciones.
 
 ---
 ## ¡Explora la página y descubre todas las interacciones! 👀
@@ -17,7 +17,6 @@ Este proyecto es una landing page moderna y dinámica, creada para mostrar un pe
 
 - **Videos de fondo** en cada sección para una experiencia visual única.
 - **Navegación rápida** con botones modernos y llamativos.
-- **Diseño responsive**: se adapta a cualquier dispositivo.
 - **Scroll suave** y navegación interna entre secciones.
 - **Estilo moderno** con degradados, sombras y botones animados.
 - **Código limpio y reutilizable** (Flexbox, CSS moderno).
